@@ -1,0 +1,14 @@
+{
+  "name": "com.satyam.levelwindow",
+  "version": "1.0.0",
+  "displayName": "Level Configuration Tool",
+  "description": "By using this you can create and modify multiple level at a time",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+
+  "author": {
+    "name": "Satyam Bera",
+    "email": "berasatyam007@gmail.com"
+
+  }
+}
