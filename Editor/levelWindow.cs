@@ -3,18 +3,18 @@ using UnityEditor;
 using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
-namespace levelConfiguration
+namespace ezygamer.CMS
 {
-    public class levelWindow : EditorWindow
+    public class LevelWindow : EditorWindow
     {
         Vector2 scrollpos; // 
         int noofLevel = 1; // no of level
-        public List<levelconfig> levelconfigs = new List<levelconfig>();
+        public List<LevelConfig> levelconfigs = new List<LevelConfig>();
 
         [MenuItem("Tool/levelWindow")]
         public static void ShowWindow()
         {
-            GetWindow<levelWindow>("Level Window");
+            GetWindow<LevelWindow>("Level Window");
         }
 
         private void OnEnable()
@@ -49,7 +49,7 @@ namespace levelConfiguration
                     int levelsToAdd = Math.Abs(noofLevel - levelconfigs.Count);
                     for (int i = 0; i < levelsToAdd; i++)
                     {
-                        levelconfigs.Add(new levelconfig { LevelNumber = levelconfigs.Count + 1 });
+                        levelconfigs.Add(new LevelConfig { LevelNumber = levelconfigs.Count + 1 });
                     }
                 }
             }
@@ -137,7 +137,7 @@ namespace levelConfiguration
 
             foreach (string assetPath in assetPaths)
             {
-                levelconfig levelConfig = AssetDatabase.LoadAssetAtPath<levelconfig>(assetPath);
+                LevelConfig levelConfig = AssetDatabase.LoadAssetAtPath<LevelConfig>(assetPath);
                 if (levelConfig != null)
                 {
                     //add to the list of levelCongis

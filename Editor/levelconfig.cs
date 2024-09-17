@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace levelConfiguration
+namespace ezygamer.CMS
 {
-    public class levelconfig : ScriptableObject
+    public class LevelConfig : ScriptableObject
     {
         public int LevelNumber;
         public Sprite backgroudSprite;
