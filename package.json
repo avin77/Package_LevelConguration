@@ -1,7 +1,7 @@
 {
   "name": "com.ezygamer.cms",
   "version": "1.0.0",
-  "displayName": "Level Configuration Tool",
+  "displayName": "com.ezygamer.CMS",
   "description": "By using this you can create and modify multiple level at a time",
   "unity": "2019.1",
   "unityRelease": "0b5",
